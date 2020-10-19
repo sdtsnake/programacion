@@ -7,6 +7,7 @@ package paquete1;
 public class Clase2 {
 
     String AtibutoDefault = "Atributo default";
+    
 
     Clase2() {
         System.out.println("Constructor default");
