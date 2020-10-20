@@ -1,6 +1,7 @@
 
 package test;
 
+import domain.Empleado;
 import domain.Gerente;
 
 /**
@@ -9,8 +10,13 @@ import domain.Gerente;
  */
 public class TestSobreEscritura {
     public static void main(String[] args) {
-        Gerente gerente1 = new Gerente("Andres",500000.00,"I&D");
-        System.out.println("gerente1 = " + gerente1.obtenerDetalles());
+        Empleado empleado = new Empleado("juan", 5000);
+        System.out.println("empleado = " + empleado.obtenerDetalles());
+        
+        Gerente gerente = new Gerente("karla", 4000, "i%D");
+        System.out.println("gerente = " + gerente.obtenerDetalles());
+        
+        
     }
     
 }
