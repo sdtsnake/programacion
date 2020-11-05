@@ -2,6 +2,7 @@
 package test;
 
 import static aritmetica.Aritmetica.division;
+import excepciones.OperacionExepcion;
 
 /**
  *
@@ -12,11 +13,15 @@ public class TestExcepciones {
         int resultado = 0;
         try{
             resultado = division(10, 0);
-        }catch(Exception e){
-            //con esta instruccion sale la listra de los errores en la excepcio
-  //          e.printStackTrace();
-            // y con este accedemos solo al mensaje del error controlado.
+        }catch(OperacionExepcion e){
+            System.out.println("Ocurrio un error de tipo OperacionExcepcion");
             System.out.println(e.getMessage());
+        
+        }catch(Exception e){
+            System.out.println("Ocurrio un error de tipo Exepcion");
+            System.out.println(e.getMessage());
+        }finally{
+            System.out.println("Se reviso la division ente crero");
         }
         System.out.println("resultado = " + resultado);
     }   
