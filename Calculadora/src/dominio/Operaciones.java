@@ -50,13 +50,13 @@ public class Operaciones {
                 resultado =  num1 + num2;     
                 break;
             case '-':
-                resultado =  num1 + num2;     
+                resultado =  num1 - num2;     
                 break; 
             case '/':
-                resultado =  num1 + num2;     
+                resultado =  num1 / num2;     
                 break;
             case '*':
-                resultado =  num1 + num2;     
+                resultado =  num1 * num2;     
                 break;
             default:
                 System.out.println("Operacion no valida");
